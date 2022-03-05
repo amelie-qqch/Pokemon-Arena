@@ -29,16 +29,7 @@ export class Pokemon implements IPokemon {
 
   constructor(props: IPokemon) {
     this.name = props.name;
-    this.hp = props.hp;
-    this.speed = props.speed;
-    this.attack = props.attack
-    this.defense = props.defense;
 
-    this.primaryAttachName = props.primaryAttachName;
-    this.secondaryAttackName = props.secondaryAttackName;
-    this.thirdAttackName = props.thirdAttackName;
-    this.fourthAttackName = props.fourthAttackName;
-    this.color = props.color;
     this.defaultImagePath = props.defaultImagePath;
     this.initialHp = props.hp;
 
