@@ -1,7 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { PokemonComponent } from './pokemon.component';
+import {PokemonComponent} from './pokemon.component';
 import {Pokemon} from "../../modeles";
+import {MatProgressBarModule} from "@angular/material/progress-bar";
 
 describe('PokemonComponent', () => {
   let component: PokemonComponent;
@@ -9,9 +10,10 @@ describe('PokemonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PokemonComponent ]
+      declarations: [PokemonComponent],
+      imports: [MatProgressBarModule]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

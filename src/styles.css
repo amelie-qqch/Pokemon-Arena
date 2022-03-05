@@ -4,8 +4,10 @@
   padding: 2%;
   background-image: url("assets/arene.png");
   background-repeat: no-repeat;
-  width: 300px;
-  height: 169px;
+  background-size : contain;
+  width: 900px;
+  height: 507px;
+  position: relative;
 }
 
 * {
@@ -13,6 +15,37 @@
   margin: 0;
 }
 
+
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.mat-progress-bar-fill::after{
+  background-color: #82f882;
+}
+
+
+
+mat-progress-bar .mat-progress-bar-buffer {
+  background: #fc0808;
+}
+
+.arena button {
+  display: inline-block;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  margin: 5px;
+  color: white;
+  background-color: seagreen;
+}
+
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
